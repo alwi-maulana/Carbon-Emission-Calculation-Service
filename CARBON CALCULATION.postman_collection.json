@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "76eaa556-d1c8-40e8-a2cf-cf4d1a42c909",
+		"name": "CARBON CALCULATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24418311",
+		"_collection_link": "https://lively-astronaut-690406.postman.co/workspace/Carbon-Tracker~609d78d3-a07b-457f-b025-3d9a4ff02058/collection/24418311-76eaa556-d1c8-40e8-a2cf-cf4d1a42c909?action=share&source=collection_link&creator=24418311"
+	},
+	"item": [
+		{
+			"name": "EVENT CALCULATE EMISSION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"carbonActivityId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\n  \"activityType\": \"DRIVING_CAR\",\n  \"amount\": 15.5,\n  \"unit\": \"KM\",\n  \"factorKg\": 0.1923\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/carbon/calculation/event",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"carbon",
+						"calculation",
+						"event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
