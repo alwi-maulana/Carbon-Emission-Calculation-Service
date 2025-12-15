@@ -17,7 +17,7 @@ import static org.alwi.carbontracker.constant.CommonConstant.Default.SUCCESS;
 public class CalculationServiceImpl implements CalculationService {
 
     @Override
-    public EventCalculationResultDTO recieverSingleCalculation(EventCalculationRequestDTO requestBody) {
+    public EventCalculationResultDTO receiverSingleCalculation(EventCalculationRequestDTO requestBody) {
 
         BigDecimal emissionKg = calculateEmission(requestBody.getAmount(), requestBody.getFactorKg());
         String status = StringTool.isNullOrZero(emissionKg) ? FAILED : SUCCESS;
