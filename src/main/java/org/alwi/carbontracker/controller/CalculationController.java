@@ -22,11 +22,8 @@ public class CalculationController {
 
     @PostMapping("/event")
     public ResponseEntity<Object> eventCalculation(@RequestBody EventCalculationRequestDTO requestBody) {
-        EventCalculationResultDTO response = calculationService.recieverSingleCalculation(requestBody);
+        EventCalculationResultDTO response = calculationService.receiverSingleCalculation(requestBody);
         return ResponseEntity.status(HttpStatus.OK).body(response);
 
     }
-
-
-
 }
