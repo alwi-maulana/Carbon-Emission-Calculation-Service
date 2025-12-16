@@ -31,7 +31,9 @@ This service focuses purely on business calculation logic and can be invoked by 
 
 **Server:** Java, SpringBoot, Rest API
 
+## API Collections are store on this file
 
+You can import it to your local postman "CARBON CALCULATION.postman_collection.json"
 
 ## Deployment on localhost:8081
 
